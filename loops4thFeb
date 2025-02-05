@@ -1,0 +1,127 @@
+#Python For Loop Practice Worksheet
+#PART 1: Using range() in For Loops
+
+#Exercise 1!
+print("Exercise 1!")
+for i in range(1, 11):
+    print(i)
+    
+#Exercise 2!
+print()
+print("Exercise 2!")
+for i in range(21):
+    if i % 2 == 0:
+        print(i)
+
+#Exercise 3!
+print()
+print("Exercise 3!")
+number = 10
+while(number >0):
+    print(number)
+    number -=1
+print(number)
+
+#PART 2: Iterating Over a List with len()
+#Exercise 4!
+print()
+print("Exercise 4!")
+fruits = ["apple", "banana", "cherry", "date"]
+for i in range(len(fruits)):
+    print(f"Index {i}: {fruits[i]}")
+
+#Exercise 5!
+print()
+print("Exercise 5!")
+numbers = [3, 7, 1, 12, 9]
+print(numbers)
+total = sum(numbers)
+print("The total of all the numbers is:", total)
+
+#PART 3: Iterating Directly Over a List
+#Exercise 6!
+print()
+print("Exercise 6!")
+colors = ["red", "green", "blue", "yellow"]
+for color in colors:
+    print(color.upper())
+
+#Exercise 7!
+print()
+print("Exercise 7!")
+numbers = [2, 4, 6, 8, 10]
+for num in numbers:
+    print(num ** 2)
+# print(numbers[0]*numbers[0])
+# print(numbers[1]*numbers[1])
+# print(numbers[2]*numbers[2])
+# print(numbers[3]*numbers[3])
+# print(numbers[4]*numbers[4])
+
+#PART 4: Nested Loops
+#Exercise 8!
+print()
+print("Exercise 8!")
+cols = 4
+rows = 4
+for rowIndex in range(rows):
+    for colIndex in range(cols):
+        print("*", end = "")
+    print()
+    
+#Exercise 9!
+print()
+print("Exercise 9!")
+adjectives = ["big", "small", "fast"]
+nouns = ["car", "dog", "tree"]
+for adjective in adjectives:
+    for noun in nouns:
+        print(f"{adjective} {noun}")
+
+#Exercise 10!
+print()
+print("Exercise 10!")
+timesTable = 1
+print("Times tables for 1:\n")
+for iteration in range(1,11):
+    ans = iteration *timesTable
+    print(timesTable,"x",iteration,"\t=",ans)
+    
+print()
+timesTable = 2
+print("Times tables for 2:\n")
+for iteration in range(1,11):
+    ans = iteration *timesTable
+    print(timesTable,"x",iteration,"\t=",ans)
+    
+print()
+timesTable = 3
+print("Times tables for 3:\n")
+for iteration in range(1,11):
+    ans = iteration *timesTable
+    print(timesTable,"x",iteration,"\t=",ans)
+    
+print()
+timesTable = 4
+print("Times tables for 4:\n")
+for iteration in range(1,11):
+    ans = iteration *timesTable
+    print(timesTable,"x",iteration,"\t=",ans)
+    
+print()
+timesTable = 5
+print("Times tables for 5:\n")
+for iteration in range(1,11):
+    ans = iteration *timesTable
+    print(timesTable,"x",iteration,"\t=",ans)
+
+#BONUS QUESTION!!!!
+print()
+for num in range(2, 51):  # Loop through numbers from 2 to 50
+    is_prime = True  # Assume the number is prime
+    for i in range(2, num):  # Check divisibility from 2 to num-1
+        if num % i == 0:  # If divisible, it's not prime
+            is_prime = False
+            break
+    if is_prime:
+        print(num)
