@@ -1,0 +1,14 @@
+#GETTING THE MEAN!
+numBS = [1, 2.5, 4, 3, 2.5, 2]
+# print(len(numBS))
+lenList = len(numBS)
+print(lenList)
+
+totalList = sum(numBS)
+print(totalList)
+
+meanList = totalList / lenList
+print(meanList)
+
+#HOMEWORK THURSDAY 6TH FEBRUARY!
+#find a way to code the median of an odd list and an even list
