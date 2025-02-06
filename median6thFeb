@@ -12,3 +12,28 @@ print(meanList)
 
 #HOMEWORK THURSDAY 6TH FEBRUARY!
 #find a way to code the median of an odd list and an even list
+#ODD NUMBER!!
+oddList = [2, 11, 4, 6, 17, 3, 21, 8, 5]
+print(oddList)
+oddList.sort()
+print(oddList)
+if len(oddList) % 2 == 0:
+    middle = len(oddList) // 2
+    median = (oddList[middle -1] + oddList[middle]) / 2
+else:
+    mid = len(oddList) // 2
+    median = oddList[mid]
+print("The median is:", median)
+
+#EVEN NUMBER!!
+evenList = [2, 11, 4, 6, 17, 13, 21, 8, 5, 14]
+print(evenList)
+evenList.sort()
+print(evenList)
+if len(evenList) % 2 == 0:
+    middle = len(evenList) // 2
+    median = (evenList[middle -1] + evenList[middle]) / 2
+else:
+    mid = len(evenList) // 2
+    median = evenList[mid]
+print("The median is:", median)
